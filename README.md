@@ -5,6 +5,9 @@
 - 考试
 ## 项目架构
 Tomacat+Servlet+Thymeleaf+Mybatis
+没有使用任何前端框架，纯手打。
+后端使用最原始的Servlet实现。
+作为学完Javaweb+JDBC之后的练习项目。
 ## 功能
 ### 登录界面
 使用账号密码进行登录
