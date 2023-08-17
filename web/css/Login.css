@@ -1,0 +1,403 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.divBackground {
+    /*能否设置比例*/
+    background: radial-gradient(#e9a15e 50%, #c51814 80%);
+    /*background: radial-gradient(#c51814 30%, #e9a15e 50%,#c51814 80%);*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    min-height: 600px;
+    min-width: 1000px;
+    height: 100%;
+}
+
+.logo .ctbuLogo_1 {
+    margin-left: 15px;
+    margin-top: 20px;
+    float: left;
+}
+
+.logo p {
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: -25px;
+    float: left;
+}
+
+.loginModel {
+    height: 70%;
+}
+
+.login-container {
+    width: 500px;
+    height: 425px;
+    position: relative;
+    left: 55%;
+    top: 30%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    transition-duration: 1s;
+}
+
+.login-container-resetPassword{
+    width: 500px;
+    height: 600px;
+    position: relative;
+    left: 55%;
+    top: 15%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    transition-duration: 1s;
+}
+
+.login-container-account{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 55%;
+    top: 20%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    transition-duration: 1s;
+}
+
+.login-box {
+    width: 450px;
+    height: 375px;
+    background: white;
+    opacity: 1;
+    border-radius: 15px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.login-box .login-p {
+    font-size: 30px;
+    /*left: 225px;*/
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.login-box input {
+    display: block;
+    margin: 30px;
+    height: 40px;
+    width: 250px;
+    border-radius: 7px;
+    outline-color: #c51814;
+    border: #e0844f 3px solid;
+    background-color: #fff6f3;
+}
+
+.login-box .user-input{
+    background-image: url('../img/icon/icon-use.png');
+    background-position: 5px 9px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    text-indent: 43px;
+    font-size: 20px;
+}
+.login-box .password-input{
+    background-image: url('../img/icon/icon-pwd.png');
+    background-position: 11px 9px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    text-indent: 43px;
+    font-size: 40px;
+    caret-color: transparent;
+}
+
+.login-box button {
+    margin-left: 67px;
+    margin-top: 20px;
+    width: 70%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #c51814;
+}
+.login-box button:active{
+    background-color: #da6d43;
+}
+
+.login-box .student-login-option {
+    width: 175px;
+    height: 40px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-bottom: grey solid 1px;
+}
+
+.login-box .teacher-login-option {
+    width: 175px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 225px;
+
+    border-bottom: grey solid 1px;
+}
+
+.login-box .student-login-option p {
+    text-align: center;
+}
+
+.login-box .teacher-login-option p {
+    position: absolute;
+    top: 19px;
+    left: 275px;
+}
+
+.login-box .login-choose-div_student {
+    position: absolute;
+    display: flex;
+    height: 4px;
+    width: 85px;
+    background: #c51814;
+
+    top: 60px;
+    left: 95px;
+    transition-duration: 1s;
+    /*transition-timing-function: cubic-bezier(6,6,1,1);*/
+}
+
+.login-box .login-choose-div_teacher {
+    position: absolute;
+    display: flex;
+    height: 4px;
+    width: 85px;
+    background: #c51814;
+
+    top: 60px;
+    left: 265px;
+    transition-duration: 1s;
+}
+
+.redText{
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 20%;
+}
+.redText p{
+    color: gold;
+    font-size: 40px;
+    /*font-family: 宋体,serif;*/
+    font-weight: bold;
+    font-style: italic;
+}
+
+.icon-ul{
+    display: flex;
+    position: absolute;
+    right:20px;
+    list-style-type: none;
+    top: 10px;
+
+}
+
+.icon-ul li{
+    width: 120px;
+}
+
+/*----------------------------------------*/
+
+.accountRegistration-box{
+    width: 450px;
+    height: 450px;
+    background: white;
+    opacity: 1;
+    border-radius: 15px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.accountRegistration-box input{
+    display: block;
+    margin: 30px;
+    height: 40px;
+    width: 250px;
+    border-radius: 7px;
+    outline-color: #c51814;
+    border: #e0844f 3px solid;
+    background-color: #fff6f3;
+}
+
+.accountRegistration-box .account{
+    background-image: url('../img/icon/icon-use.png');
+    background-position: 5px 9px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    text-indent: 43px;
+    font-size: 20px;
+}
+
+.accountRegistration-box .accountPassword{
+    background-image: url('../img/icon/icon-pwd.png');
+    background-position: 11px 9px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    text-indent: 43px;
+    font-size: 40px;
+    caret-color: transparent;
+}
+
+.accountRegistration-box .accountPasswordAgain{
+    background-image: url('../img/icon/icon-pwd.png');
+    background-position: 11px 9px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    text-indent: 43px;
+    font-size: 40px;
+    caret-color: transparent;
+}
+
+
+
+.accountRegistration-box p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.accountRegistration-box .accountRegistration-button{
+    margin-left: 60px;
+    top: 367px;
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #c51814;
+}
+
+.accountRegistration-box .return-button{
+
+    margin-left: 250px;
+    top: 367px;
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #c51814;
+}
+
+.accountRegistration-box button:active{
+    background-color: #da6d43;
+}
+
+
+/*----------------------------------------*/
+
+
+.resetPassword-box{
+    width: 450px;
+    height: 550px;
+    background: white;
+    opacity: 1;
+    border-radius: 15px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.resetPassword-box input{
+    display: block;
+    margin: 30px;
+    height: 40px;
+    width: 250px;
+    border-radius: 7px;
+    outline-color: #c51814;
+    border: #e0844f 3px solid;
+    background-color: #fff6f3;
+}
+
+.resetPassword-box .account-resetPassword{
+    background-image: url('../img/icon/icon-use.png');
+    background-position: 5px 9px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    text-indent: 43px;
+    font-size: 20px;
+}
+
+.resetPassword-box .password-resetPassword{
+    background-image: url('../img/icon/icon-pwd.png');
+    background-position: 11px 9px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    text-indent: 43px;
+    font-size: 40px;
+    caret-color: transparent;
+}
+
+.resetPassword-box .newPassword-resetPassword{
+    background-image: url('../img/icon/icon-pwd.png');
+    background-position: 11px 9px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    text-indent: 43px;
+    font-size: 40px;
+    caret-color: transparent;
+}
+
+.resetPassword-box .newPasswordAgain-resetPassword{
+    background-image: url('../img/icon/icon-pwd.png');
+    background-position: 11px 9px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    text-indent: 43px;
+    font-size: 40px;
+    caret-color: transparent;
+}
+
+.resetPassword-box p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.resetPassword-box .resetPassword-button{
+    margin-left: 60px;
+    top: 459px;
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #c51814;
+}
+
+.resetPassword-box .return-button-resetPassword{
+    margin-left: 250px;
+    top: 459px;
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #c51814;
+}
+
+.resetPassword-box button:active{
+    background-color: #da6d43;
+}
+
+
+
+
+
+

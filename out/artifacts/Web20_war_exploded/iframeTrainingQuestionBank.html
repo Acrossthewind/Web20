@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>训练题库</title>
+    <script type="text/javascript" src="js/jQuery/http_ajax.aspnetcdn.com_ajax_jquery_jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="bootStrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/student/iframeTrainingQuestionBank.css" type="text/css">
+    <link rel="stylesheet" href="bootStrap/css/bootstrap.css">
+    <script src="js/javascript/student/iframeTrainingQuestionBank.js"></script>
+
+</head>
+<body>
+
+    <div class="divIframeTrainingQuestionBank_background">
+        <div style="text-align: center;height: 100px;width: 100%">
+            <p class="iframe-trainingQuestionBank-p">训练题库</p>
+        </div>
+        <button id="button-examKnow-id" type="button" style="position: absolute;right: 100px;top: 80px" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#TrainingStatisticModal">
+            统计训练情况
+        </button>
+
+        <div class="question-box" id="question-box">
+
+        </div>
+
+    </div>
+
+</body>
+
+
+<!-- Modal -->
+<div class="modal fade" id="TrainingStatisticModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">20大答题-作答情况</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p >这里是你本次答题的情况</p>
+                <p id="countP">一共作答：</p>
+                <p id="scoreP">成绩：</p>
+                <p id="successP">正确：</p>
+                <p id="errorP">错误：</p>
+                <p id="accuracyP">正确率：</p>
+            </div>
+            <div class="modal-footer">
+                <button id="button-closeModal-id" type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

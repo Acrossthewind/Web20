@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二十大考试iframe</title>
+
+    <script type="text/javascript" src="js/jQuery/http_ajax.aspnetcdn.com_ajax_jquery_jquery-3.3.1.js"></script>
+
+    <script type="text/javascript" src="js/javascript/student/iframe20Exam.js"></script>
+
+    <script type="text/javascript" src="bootStrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/student/iframe20Exam.css" type="text/css">
+
+    <link rel="stylesheet" href="bootStrap/css/bootstrap.css" >
+
+
+</head>
+<body>
+    <div class="divIframe20Exam_background">
+
+<!--        <span class="iframe-20Exam-span">二十大考试</span>-->
+        <div style="text-align: center;height: 100px;width: 100%">
+            <p class="iframe-20Exam-p">二十大考试</p>
+        </div>
+
+        <div id="scoreDiv" style="font-size: 35px;color: #c51814;font-weight: bolder;font-style: italic;margin: 15px">成绩：</div>
+        <button id="button-examKnow-id" type="button" style="position: absolute;right: 100px;top: 80px" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#examKnowModal">
+            考前须知
+        </button>
+
+
+        <div class="question-box" id="question-box">
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="examKnowModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">20大答题-考前须知</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                这里是20大考前须知-----------------------------------------------------------------------------------------------------------------
+            </div>
+            <div class="modal-footer">
+                <button id="button-closeModal-id" type="button" class="btn btn-secondary" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

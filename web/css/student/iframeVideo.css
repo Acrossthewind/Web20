@@ -1,0 +1,99 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.divIframeVideo_background{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.iframe-video-p{
+    width: 100%;
+    top: 30px;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.video-box{
+    margin: 30px auto;
+    width: 60%;
+    height: 200px;
+    /*border: solid 1px black;*/
+    background-color: #ceced5;
+
+}
+
+
+
+
+.div-videoImg{
+    float: left;
+    height: 160px;
+    margin:20px
+}
+
+.div-videoImg img{
+    height: 160px;
+}
+
+.div-videoText{
+    float: right;
+    width: 50%;
+    height: 30%;
+}
+
+.div-videoText p{
+    /*display: block;*/
+    height: 50px;
+    line-height: 100%;
+    margin-top: 20px;
+    /*text-align: center;*/
+}
+
+.div-videoSrc{
+    float: right;
+    width: 50%;
+    height: 30%;
+}
+
+.div-videoSrc a{
+    display: block;
+    height: 50px;
+    line-height: 100%;
+    margin-top: 20px;
+}
+
+.div-videoSrc span{
+    float: left;
+    margin-top: 16px;
+}
+
+.div-videoAuthor{
+    margin-top: 20px;
+    float: right;
+    width: 50%;
+    height: 30%;
+}
+
+.div-videoAuthor p{
+    display: block;
+    height: 50px;
+    line-height: 100%;
+    margin-top: 20px;
+}
+
+.div-videoAuthor span{
+    float: left;
+    margin-top: 16px;
+}

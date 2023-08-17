@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>20大答题系统登录页面</title>
+
+    <script type="text/javascript" src="js/jQuery/http_ajax.aspnetcdn.com_ajax_jquery_jquery-3.3.1.js"></script>
+
+    <script type="text/javascript" src="js/javascript/loginJavaScript.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/Login.css">
+
+
+</head>
+
+<body>
+<div class="divBackground">
+    <div class="logo" style="height: 100px">
+        <a id="ctbuLogo-a" href="https://www.ctbu.edu.cn/index.htm">
+            <img class="ctbuLogo_1" src="img/ctbuLogo/ctbuLogo1.png" alt="">
+        </a>
+        <p style="left: 10px"> | </p>
+        <p style="font-size: 25px;top: 5px;left: 15px">20大精神-答题系统</p>
+
+        <ul class="icon-ul">
+            <li><img id="weiXin-icon" src="img/icon/weixin_icon.png">
+                <img id="weiXin-ewm" style="position: absolute;left: 15px;top: 50px" src="img/erweima/ewm_weixin.png" alt="">
+            </li>
+            <li><img id="xinLang-icon" src="img/icon/xinlang_icon.png">
+                <img id="xinLang-ewm" style="position: absolute;left: 135px;top: 50px" src="img/erweima/ewm_xinlang.png" alt="">
+            </li>
+            <li><img id="douYin-icon" src="img/icon/douyin_icon.png">
+                <img id="douYin-ewm" style="position: absolute;left: 255px;top: 50px" src="img/erweima/ewm_douyin.png" alt="">
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="loginModel">
+        <div class="redText">
+            <p class="sentence">党和人民对全国各族青年寄予殷切期望，希望你们在改革开放和社会主义现代化建设的伟大实践中，以自己的青春活力和满腔热血，为祖国和人民建立杰出的功绩！</p>
+            <p class="author" style="right: 0;position: absolute" >——江泽民</p>
+        </div>
+        <div class="login-container" id="login-container">
+
+                <!--账号注册-->
+
+                    <div class="accountRegistration-box" style="display: none">
+                        <form id="insertForm">
+                        <p>账号注册</p>
+                        <input type="text" id="account" class="account" name="account">
+                        <span style="position: absolute;top: 112px;left: 325px">注册账号</span>
+                        <input type="password" id="accountPassword" class="accountPassword" name="accountPassword">
+                        <span style="position: absolute;top: 188px;left: 325px">注册密码</span>
+                        <input type="password" id="accountPasswordAgain" class="accountPasswordAgain" name="accountPasswordAgain">
+                        <span style="position: absolute;top:266px;left: 325px">确认密码</span>
+
+                        <div name="showText1" id="showText1">
+                            <p style="color: #c51814;text-align: center;font-size: 10px" id="pShowMsg"></p>
+                        </div>
+                        </form>
+                        <button type="button" name="return-button" id="return-button" class="return-button">
+                            <p style="color: white;font-weight: bold;font-size: 25px;margin: 5px;font-style: italic;">返 回
+                            <p>
+                        </button>
+
+                        <button type="submit" name="accountRegistration-button" id="accountRegistration-button" class="accountRegistration-button">
+                            <p style="color: white;font-weight: bold;font-size: 25px;margin: 5px;font-style: italic;">注 册
+                            <p>
+                        </button>
+                    </div>
+
+
+
+
+                <!--重置密码-->
+                <div class="resetPassword-box" style="display: none">
+                    <form id="updateForm">
+                    <p>重置密码</p>
+                    <input type="text" id="account-resetPassword" class="account-resetPassword">
+                    <span style="position: absolute;top: 112px;left: 325px">本人账号</span>
+                    <input type="password" id="password-resetPassword" class="password-resetPassword">
+                    <span style="position: absolute;top: 188px;left: 325px">原有密码</span>
+                    <input type="password" id="newPassword-resetPassword" class="newPassword-resetPassword">
+                    <span style="position: absolute;top:266px;left: 325px">新建密码</span>
+                    <input type="password" id="newPasswordAgain-resetPassword" class="newPasswordAgain-resetPassword">
+                    <span style="position: absolute;top:342px;left: 325px">确认密码</span>
+                     <div name="showText1" id="showText2">
+                         <p style="color: #c51814;text-align: center;font-size: 10px" id="pShowMsg1"></p>
+                     </div>
+                    </form>
+
+                    <button type="button" name="return-button-Password" id="return-button-resetPassword" class="return-button-resetPassword">
+                        <p style="color: white;font-weight: bold;font-size: 25px;margin: 5px;font-style: italic;" >返 回
+                        <p>
+                    </button>
+
+                    <button type="submit" name="resetPassword-button" id="resetPassword-button" class="resetPassword-button">
+                        <p style="color: white;font-weight: bold;font-size: 25px;margin: 5px;font-style: italic;">修改
+                        <p>
+                    </button>
+                </div>
+
+            <form action="http://10.200.95.186:8080/Web20/login" method="post">
+                <div class="login-box">
+                    <div class="login-choose-div_student" id="login-choose-div"></div>
+                    <div class="student-login-option">
+                        <p>学生登录</p>
+                    </div>
+                    <div class="teacher-login-option">
+                        <p>教师登录</p>
+                    </div>
+
+                    <input type="hidden"  name="choose" id="choose" value="student" >
+
+                    <input type="text" name="username" id="username" class="user-input">
+                    <span style="position: absolute;top: 100px;left: 325px;">
+                    <a href="#" class="a-accountRegistration">账号注册</a>
+                </span>
+
+                    <input type="password" name="password" id="password" class="password-input">
+                    <span style="position: absolute;top: 180px;left: 325px;">
+                    <a href="#" class="a-resetPassword">重置密码</a>
+                </span>
+
+                    <div name="showText" id="showText">
+                        <p style="color: #c51814;text-align: center" th:text="${session.msg}" ></p>
+                    </div>
+
+                    <button type="submit" name="login-button" id="login-button" class="login-button">
+                        <p style="color: white;font-weight: bold;font-size: 25px;margin: 5px;font-style: italic;">登 录
+                        <p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="loginFoot">
+
+    </div>
+
+</div>
+</body>
+
+</html>
